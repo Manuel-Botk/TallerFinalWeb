@@ -1,16 +1,36 @@
-# React + Vite
+# ⚔️ Asistente del DM
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Herramienta interactiva para Dungeon Masters de Dungeons & Dragons 5e.
 
-Currently, two official plugins are available:
+## 🔗 Enlaces
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Aplicación web (Vercel):** https://taller-final-web.vercel.app/
+- **Descargar APK (Android):** ver la sección [Releases](../../releases)
 
-## React Compiler
+## ✨ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🐉 **Bestiario:** consulta, búsqueda y paginación de monstruos con sus estadísticas (AC, HP, CR).
+- 💰 **Generador de botín:** monedas y objetos aleatorios según el nivel de desafío del monstruo derrotado.
+- 🎲 **Bandeja de dados:** d4, d6, d8, d10, d12, d20 y d100 con animación e historial.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- JavaScript
+- CSS (Mobile-First)
+- CapacitorJS (empaquetado Android)
+- API pública: [D&D 5e API](https://www.dnd5eapi.co/api/)
+
+## 🚀 Ejecutar en local
+
+```bash
+npm install
+npm run dev
+```
+
+## 📦 Compilar
+
+```bash
+npm run build
+```
