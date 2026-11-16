@@ -14,10 +14,10 @@ const CR_OPTIONS = [
 ];
 
 const COIN_INFO = [
-  { key: 'cp', name: 'Cobre', icon: '🟤' },
-  { key: 'sp', name: 'Plata', icon: '⚪' },
-  { key: 'gp', name: 'Oro', icon: '🟡' },
-  { key: 'pp', name: 'Platino', icon: '🔷' },
+  { key: 'cp', name: 'Cobre', icon: ':(' },
+  { key: 'sp', name: 'Plata', icon: ':/' },
+  { key: 'gp', name: 'Oro', icon: ':)' },
+  { key: 'pp', name: 'Platino', icon: ':D' },
 ];
 
 export default function LootGenerator() {
@@ -69,7 +69,7 @@ export default function LootGenerator() {
     }
   };
 
-  if (loadingLists) return <p className="status">Preparando el tesoro... 💰</p>;
+  if (loadingLists) return <p className="status">Preparando el tesoro...</p>;
 
   return (
     <section>
@@ -87,7 +87,7 @@ export default function LootGenerator() {
           ))}
         </select>
         <button className="primary-btn" onClick={handleGenerate} disabled={generating}>
-          {generating ? 'Generando...' : '🎁 Generar botín'}
+          {generating ? 'Generando...' : 'Generar botín'}
         </button>
       </div>
 
@@ -115,10 +115,10 @@ export default function LootGenerator() {
                 subtitle={item.equipment_category?.name}
                 stats={[
                   {
-                    label: '💰 Costo',
+                    label: 'Costo',
                     value: item.cost ? `${item.cost.quantity} ${item.cost.unit}` : '—',
                   },
-                  { label: '⚖️ Peso', value: item.weight ? `${item.weight} lb` : '—' },
+                  { label: 'Peso', value: item.weight ? `${item.weight} lb` : '—' },
                 ]}
               />
             ))}
@@ -126,14 +126,14 @@ export default function LootGenerator() {
 
           {loot.magic.length > 0 && (
             <>
-              <h3 className="loot-subtitle">✨ Objetos mágicos</h3>
+              <h3 className="loot-subtitle"> Objetos mágicos</h3>
               <div className="card-grid">
                 {loot.magic.map((item) => (
                   <Card
                     key={item.index}
                     title={item.name}
                     subtitle={item.equipment_category?.name}
-                    stats={[{ label: '💎 Rareza', value: item.rarity?.name ?? '—' }]}
+                    stats={[{ label: 'Rareza', value: item.rarity?.name ?? '—' }]}
                   >
                     <p className="item-desc">{item.desc?.[0]}</p>
                   </Card>

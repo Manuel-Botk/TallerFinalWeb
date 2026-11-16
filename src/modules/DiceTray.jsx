@@ -73,11 +73,11 @@ export default function DiceTray() {
         )}
       </div>
 
-      {result?.type === 'crit' && <p className="roll-message crit-text">⭐ ¡20 natural! ⭐</p>}
-      {result?.type === 'fail' && <p className="roll-message fail-text">💀 ¡Pifia! (1 natural)</p>}
+      {result?.type === 'crit' && <p className="roll-message crit-text">¡20 natural!</p>}
+      {result?.type === 'fail' && <p className="roll-message fail-text">¡Pifia! (1 natural)</p>}
 
       <button className="primary-btn roll-btn" onClick={handleRoll} disabled={rolling}>
-        {rolling ? 'Lanzando...' : `🎲 Lanzar d${selected}`}
+        {rolling ? 'Lanzando...' : `Lanzar d${selected}`}
       </button>
 
       {history.length > 0 && (

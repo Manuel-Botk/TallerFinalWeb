@@ -1,7 +1,7 @@
 const TABS = [
-  { id: 'bestiary', label: '🐉 Bestiario' },
-  { id: 'loot', label: '💰 Botín' },
-  { id: 'dice', label: '🎲 Dados' },
+  { id: 'bestiary', label: 'Bestiario' },
+  { id: 'loot', label: 'Botín' },
+  { id: 'dice', label: 'Dados' },
 ];
 
 export default function Navbar({ active, onChange }) {

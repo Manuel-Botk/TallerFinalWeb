@@ -11,8 +11,8 @@ html, body {
 
 body {
   font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
-  background: #1a1423;
-  color: #f1e9da;
+  background: #161212;
+  color: #ffffff;
   min-height: 100vh;
 }
 
@@ -26,26 +26,26 @@ img { max-width: 100%; }
 .header {
   text-align: center;
   padding: 1rem;
-  background: #2d1e3e;
-  border-bottom: 3px solid #c9a227;
+  background: #121213;
+  border-bottom: 3px solid #ffffff;
 }
 
 .header h1 {
   font-size: 1.4rem;
-  color: #c9a227;
+  color: #f8f8f8;
 }
 
 .navbar {
   display: flex;
   gap: 0.5rem;
   padding: 0.75rem;
-  background: #231830;
+  background: #121213;
 }
 
 .nav-btn {
   flex: 1;
   padding: 0.7rem 0.3rem;
-  border: 1px solid #4a3560;
+  border: 1px solid #e5eee9;
   border-radius: 8px;
   background: transparent;
   color: #f1e9da;
@@ -54,8 +54,8 @@ img { max-width: 100%; }
 }
 
 .nav-btn.active {
-  background: #c9a227;
-  color: #1a1423;
+  background: #e7e7ec;
+  color: #000000;
   font-weight: bold;
 }
 
@@ -65,16 +65,16 @@ img { max-width: 100%; }
 
 .section-title {
   margin-bottom: 1rem;
-  color: #c9a227;
+  color: #f1f0ea;
 }
 
 .search-input {
   width: 100%;
   padding: 0.8rem;
-  border: 1px solid #4a3560;
+  border: 1px solid #ebebf3;
   border-radius: 8px;
-  background: #231830;
-  color: #f1e9da;
+  background: #201d24;
+  color: #f1f0ec;
   font-size: 1rem;
 }
 
@@ -88,7 +88,7 @@ img { max-width: 100%; }
   text-align: center;
   padding: 1.5rem 0;
 }
-.status.error { color: #ff7b7b; }
+.status.error { color: #582121; }
 
 /* Tarjetas: una columna en móvil */
 .card-grid {
@@ -98,7 +98,7 @@ img { max-width: 100%; }
 }
 
 .card {
-  background: #2d1e3e;
+  background: #211e25;
   border: 1px solid #4a3560;
   border-radius: 12px;
   overflow: hidden;
@@ -109,13 +109,13 @@ img { max-width: 100%; }
   width: 100%;
   height: 180px;
   object-fit: cover;
-  background: #1a1423;
+  background: #b9afc7;
 }
 
 .card-body { padding: 1rem; }
 
 .card-title {
-  color: #c9a227;
+  color: #e7e5df;
   font-size: 1.15rem;
 }
 
@@ -133,7 +133,7 @@ img { max-width: 100%; }
   justify-content: space-between;
   gap: 0.5rem;
   padding: 0.35rem 0;
-  border-bottom: 1px solid #4a3560;
+  border-bottom: 1px solid #68666b;
   font-size: 0.9rem;
 }
 
@@ -149,7 +149,7 @@ img { max-width: 100%; }
 }
 
 .abilities span {
-  background: #231830;
+  background: #343335;
   padding: 0.3rem;
   border-radius: 6px;
 }
@@ -164,10 +164,10 @@ img { max-width: 100%; }
 
 .pagination button {
   padding: 0.6rem 1rem;
-  border: 1px solid #c9a227;
+  border: 1px solid #dbe1e6;
   border-radius: 8px;
   background: transparent;
-  color: #c9a227;
+  color: #cfcab7;
   cursor: pointer;
 }
 
@@ -187,9 +187,9 @@ img { max-width: 100%; }
 
 .loot-controls select {
   padding: 0.8rem;
-  border: 1px solid #4a3560;
+  border: 1px solid #cfcad4;
   border-radius: 8px;
-  background: #231830;
+  background: #2c2724;
   color: #f1e9da;
   font-size: 1rem;
 }
@@ -198,8 +198,8 @@ img { max-width: 100%; }
   padding: 0.9rem;
   border: none;
   border-radius: 8px;
-  background: #c9a227;
-  color: #1a1423;
+  background: #f5f3f7;
+  color: #0a0000;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -209,7 +209,7 @@ img { max-width: 100%; }
 
 .loot-subtitle {
   margin: 1.5rem 0 0.8rem;
-  color: #c9a227;
+  color: #eae9f0;
 }
 
 .coins {
@@ -223,13 +223,13 @@ img { max-width: 100%; }
   flex-direction: column;
   align-items: center;
   padding: 0.8rem;
-  background: #2d1e3e;
-  border: 1px solid #4a3560;
+  background: #29282b;
+  border: 1px solid #ece8f0;
   border-radius: 12px;
 }
 
 .coin-icon { font-size: 1.8rem; }
-.coin-amount { font-size: 1.5rem; font-weight: bold; color: #c9a227; }
+.coin-amount { font-size: 1.5rem; font-weight: bold; color: #f0eee7; }
 .coin-name { font-size: 0.75rem; opacity: 0.7; }
 
 .item-desc {
@@ -247,19 +247,19 @@ img { max-width: 100%; }
 
 .die-btn {
   padding: 0.8rem 0;
-  border: 1px solid #4a3560;
+  border: 1px solid #e2dbe9;
   border-radius: 8px;
-  background: #231830;
-  color: #f1e9da;
+  background: #46434b;
+  color: #eeece7;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
 }
 
 .die-btn.active {
-  background: #c9a227;
-  color: #1a1423;
-  border-color: #c9a227;
+  background: #f1f0ed;
+  color: #010003;
+  border-color: #020202;
 }
 
 .die-btn:disabled { opacity: 0.6; cursor: wait; }
@@ -272,16 +272,16 @@ img { max-width: 100%; }
   height: 200px;
   max-width: 100%;
   margin: 0 auto 1rem;
-  border: 4px solid #c9a227;
+  border: 4px solid #f0efeb;
   border-radius: 24px;
-  background: #2d1e3e;
+  background: #210d4e;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .dice-number {
   font-size: 5rem;
   font-weight: bold;
-  color: #c9a227;
+  color: #eceae0;
   animation: pop 0.4s ease-out;
 }
 

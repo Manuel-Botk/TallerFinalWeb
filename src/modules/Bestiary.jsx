@@ -84,8 +84,8 @@ export default function Bestiary() {
     setPage(1);
   };
 
-  if (loadingList) return <p className="status">Cargando bestiario... 🐉</p>;
-  if (error) return <p className="status error">⚠️ {error}</p>;
+  if (loadingList) return <p className="status">Cargando bestiario... </p>;
+  if (error) return <p className="status error"> {error}</p>;
 
   return (
     <section>
@@ -111,9 +111,9 @@ export default function Bestiary() {
             subtitle={`${translateSize[m.size] ?? m.size} · ${m.type}`}
             image={m.image ? `${API}${m.image}` : null}
             stats={[
-              { label: '🛡️ Armadura (AC)', value: getAC(m) },
-              { label: '❤️ Puntos de golpe (HP)', value: m.hit_points },
-              { label: '💀 Desafío (CR)', value: formatCR(m.challenge_rating) },
+              { label: 'Armadura (AC)', value: getAC(m) },
+              { label: 'Puntos de golpe (HP)', value: m.hit_points },
+              { label: 'Desafío (CR)', value: formatCR(m.challenge_rating) },
             ]}
           >
             <div className="abilities">
